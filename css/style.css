@@ -1,0 +1,106 @@
+:root {
+    --primary: #114;
+    --main: #f4f4f4d7;
+    --lari_color: #086AD8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffff;
+    height: 100vh;
+    background: var(--lari_color);
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.slide{
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-name: animateUpDown;
+    animation-duration: 3.8s;
+    animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+    animation-iteration-count: infinite;
+}
+
+.im01 {
+    position: absolute;
+    top: -4%;
+    left: 28%;
+}
+
+.im02 {
+    position: absolute;
+    top: 12%;
+    right: 6%;
+}
+
+.im03 {
+    position: absolute;
+    bottom: 10%;
+    right: -10%;
+}
+
+.im04 {
+    position: absolute;
+    bottom: -3%;
+    right: 18%;
+}
+
+.im05 {
+    animation-duration: 3.2s;
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    z-index: 4;
+}
+
+@keyframes animateUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.main {
+    display: flex;
+    padding-top: 30px;
+}
+
+.content {
+    position: absolute;
+    width: 550px;
+    top: 50%;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.anime {
+    float: right;
+}
+
+.mod{
+    background: #fff;
+    width: 500px;
+    height: 350px;
+}
+
+.nav-li{
+    color:#114;
+}
