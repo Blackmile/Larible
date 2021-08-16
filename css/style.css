@@ -13,7 +13,6 @@
 
 body {
     color: #ffff;
-    height: 100vh;
     background: var(--lari_color);
 }
 
@@ -103,4 +102,8 @@ img {
 
 .nav-li{
     color:#114;
+}
+
+.pricing{
+    color: #1217;
 }
